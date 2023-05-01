@@ -12,7 +12,7 @@ export class PostEntity {
   message: string;
 
   @Column({ name: 'author_id' })
-  author: string;
+  authorId: string;
 
   @Column({ name: 'is_published' })
   isPublished: boolean;
