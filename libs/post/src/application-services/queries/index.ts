@@ -3,6 +3,12 @@ import { IQueryHandler } from '@nestjs/cqrs';
 import { GetPostQueryHanlder } from './get-post/get-post.query-handler';
 import { GetPostsQueryHandler } from './get-posts/get-posts.query-handler';
 
+export * from './get-post/get-post.query';
+export * from './get-posts/get-posts.query';
+
+export * from './get-post/get-post.query-handler';
+export * from './get-posts/get-posts.query-handler';
+
 export const POST_QUERIES_HANDLERS: Type<IQueryHandler>[] = [
   GetPostQueryHanlder,
   GetPostsQueryHandler,
